@@ -20,7 +20,7 @@ the same commit cycle to avoid drift.
 | Why Claude Haiku Returned UNCERTAIN: Anatomy of an Indirect Prompt Injection in an Agentic System | Jun 5, 2026 | [blog/posts/2026-06-05-why-claude-haiku-returned-uncertain.md](blog/posts/2026-06-05-why-claude-haiku-returned-uncertain.md) | [live ↗](https://agentsafelabs.com/blog/why-claude-haiku-returned-uncertain-anatomy-of-an-indirect-prompt-injection-in-an-agentic-system/) |
 | The OWASP Agentic Security Initiative Top 10: A Practical Developer Guide for LangChain and CrewAI | Jun 5, 2026 | [blog/posts/2026-06-05-owasp-asi-top-10-guide.md](blog/posts/2026-06-05-owasp-asi-top-10-guide.md) | [live ↗](https://agentsafelabs.com/blog/the-owasp-agentic-security-initiative-top-10-a-practical-developer-guide-for-langchain-and-crewai/) |
 | Prompt Injection Is Not a Chatbot Problem: How the Attack Surface Changes When Your LLM Has Tools | Jun 7, 2026 | [blog/posts/2026-06-07-prompt-injection-not-a-chatbot-problem.md](blog/posts/2026-06-07-prompt-injection-not-a-chatbot-problem.md) | [live ↗](https://agentsafelabs.com/blog/prompt-injection-is-not-a-chatbot-problem-how-the-attack-surface-changes-when-your-llm-has-tools/) |
-| We Were Wrong About the UNCERTAIN Results — Here's What Actually Happened | Jul 2026 (pending publish) | [blog/posts/2026-07-10-correcting-uncertain-results.md](blog/posts/2026-07-10-correcting-uncertain-results.md) | not yet live |
+| We Were Wrong About the UNCERTAIN Results — Here's What Actually Happened | Jul 2026 (pending publish) | [blog/posts/2026-07-11-correcting-uncertain-results.md](blog/posts/2026-07-11-correcting-uncertain-results.md) | not yet live |
 
 ### Note on the UNCERTAIN post correction
 
