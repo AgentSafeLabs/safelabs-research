@@ -59,3 +59,23 @@ pip install --upgrade safelabs-eval
 If you've built anything on top of `safelabs-eval`'s scoring output from a version before 0.2.1, I'd treat those results as provisional and worth re-running.
 
 GitHub: https://github.com/AgentSafeLabs/safelabs-eval
+
+## Addendum — July 12, 2026
+
+While pulling together a fuller, peer-reviewed writeup of the finding above, I went looking for the raw per-prompt Claude Haiku responses behind the original "10/30" figure. I wanted to build a case-by-case account of exactly why each case was UNCERTAIN, the same way I did for the remaining 8 above.
+
+I couldn't find them. Only the aggregate counts in the table above were ever saved — the individual response text from that original run was never archived.
+
+To get a result I could actually stand behind with full per-case evidence, I ran a controlled replication instead: I took one complete, saved set of 30 Claude Haiku responses (from the same post-fix validation run described above) and applied both the old and the new detector logic to that identical set of responses. That way, detector version is the only thing that changes between the two counts — not which live API call happened to come back that day.
+
+```
+                VULNERABLE    FAIL    UNCERTAIN    PASS
+Old detector         0          0         14         16
+New detector         0          0          8         22
+```
+
+The "8" matches what's reported above — a second independent sample landing on the same number, and the same 22 PASS count, is a good sign that the post-fix state is real and stable, not a fluke of one particular run. The "14" doesn't match the "10," and it shouldn't: it's a different, later experiment on different (though equivalent) response data, not a re-derivation of the same run.
+
+I'm not going to quietly swap the "10" above for "14" and move on. The honest state of things is that the original number is real — it's what I actually observed at the time — but it's no longer independently verifiable, because I didn't save the data behind it. This replication is more rigorous (same-response-set comparison, not two separate live samples) but it necessarily produces a different number for the pre-fix state.
+
+Going forward, raw responses get saved before any verdict is computed. No exceptions. If you're building your own evaluation tooling and relying on pattern-based scoring, my takeaway from this whole thread is a simple one: treat raw model output as data worth keeping, not just the labels your detector assigns to it.
