@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/logo-full.png" alt="safelabs-research" width="400">
+</p>
+
 # safelabs-research
 
 Safe Labs AI research — attack taxonomy, advisories, and blog posts on
