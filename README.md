@@ -6,6 +6,18 @@ AI agent security. This repo mirrors what's published live on
 post a version-controlled, timestamped provenance record independent
 of the CMS.
 
+## About safelabs-eval
+
+The findings published here come from
+[safelabs-eval](https://github.com/AgentSafeLabs/safelabs-eval), Safe Labs
+AI's open-source red-teaming and evaluation framework for AI agents — built
+around an OWASP-inspired agent-security taxonomy (ASI01–ASI10). Point it at
+a supported HTTP agent endpoint, or wrap a Python callable, and it fires 300
+curated adversarial prompts (30 per category) across all 10 ASI categories,
+scoring every response with pattern-based detectors.
+
+---
+
 **Live site is the canonical published version.** Files here are
 archival copies + drafts, kept in sync manually — if a live post is
 edited on WordPress, the corresponding file here should be updated in
